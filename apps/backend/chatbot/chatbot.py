@@ -27,7 +27,7 @@ persona_system_prompt = load_persona("lion")
 model = ChatOpenAI(
     model="HCX-005",  # 예: "llama3", "mistral" 등
     base_url="https://clovastudio.stream.ntruss.com/v1/openai",  # Ollama, vLLM 등의 OpenAI 호환 Base URL
-    api_key="nv-f5f203197385450c802d459aed95f5f8koHd",  # 로컬 LLM의 경우 임의의 값 입력 가능
+    api_key="",  # 로컬 LLM의 경우 임의의 값 입력 가능
 )
 
 prompt = ChatPromptTemplate.from_messages([
