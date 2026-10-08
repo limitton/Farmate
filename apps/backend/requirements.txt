@@ -1,0 +1,12 @@
+fastapi 
+uvicorn
+python-multipart
+langchain
+openai 
+pydantic
+python-dotenv
+pydantic-settings
+langchain_openai
+tkdesigner
+PyQt5 
+PyQtWebEngine

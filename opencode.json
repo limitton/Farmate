@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "clova": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "clova",
+      "options": {
+        "baseURL": "http://localhost:4000/v1"
+      },
+      "models": {
+        "HCX-007": {
+          "name": "HCX-007"
+        }
+      }
+    }
+  }
+}
