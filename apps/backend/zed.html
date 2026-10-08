@@ -1,0 +1,77 @@
+import { HomeIndicator } from "./HomeIndicator";
+import image961 from "./image-96-1.png";
+import image100 from "./image-100.png";
+import { Menu } from "./Menu";
+import maskGroup from "./mask-group.png";
+import { StatusBarIphone } from "./StatusBarIphone";
+import union from "./union.svg";
+import vector970 from "./vector-970.svg";
+
+export const Screen = (): JSX.Element => {
+  return (
+    <div className="w-full min-w-[402px] min-h-[874px] relative">
+      <img
+        className="absolute top-[499px] left-0 w-[402px] h-[375px]"
+        alt="Vector"
+        src={vector970}
+      />
+      <div className="absolute top-[585px] left-[calc(50.00%_-_80px)] w-[161px] h-[30px] bg-[#bfeec4] rounded-[80.5px/15px] blur-[5.65px]" />
+      <img
+        className="absolute top-[217px] left-[33px] w-[337px] h-[136px]"
+        alt="Union"
+        src={union}
+      />
+      <div className="flex-col w-[301px] items-start gap-2.5 p-2.5 top-[225px] left-[49px] flex justify-center absolute">
+        <div className="relative w-[261px] mt-[-1.00px] [font-family:'Gmarket_Sans-Medium',Helvetica] font-medium text-white text-sm tracking-[0] leading-[normal]">
+          인간관계 상담사 사자
+        </div>
+        <div className="relative self-stretch [font-family:'Gmarket_Sans-Medium',Helvetica] font-medium text-white text-xl tracking-[0] leading-[normal]">
+          아무리생각해도그건니가잘못한게맞아... ㅉㅉ
+        </div>
+      </div>
+      <div className="absolute top-[174px] left-10 w-[258px] [font-family:'Gmarket_Sans-Bold',Helvetica] font-bold text-[#5ebb68] text-xl tracking-[0] leading-[normal]">
+        최근 대화한 친구
+      </div>
+      <StatusBarIphone
+        className="!absolute !left-0 !top-0"
+        levels="image.svg"
+        spanClassName="!text-white"
+        timeClassName="!text-colors-grays-white"
+      />
+      <div className="absolute top-[659px] left-[146px] w-[103px] h-[9px] flex gap-[15px]">
+        <div className="w-[8.63px] h-[8.63px] bg-[#caf5d6] rounded-[4.32px]" />
+        <div className="w-[8.63px] h-[8.63px] bg-[#caf5d6] rounded-[4.32px]" />
+        <div className="w-[8.63px] h-[8.63px] bg-[#caf5d6] rounded-[4.32px]" />
+        <div className="w-[8.63px] h-[8.63px] bg-white rounded-[4.32px]" />
+        <div className="w-[8.63px] h-[8.63px] bg-[#717171] rounded-[4.32px]" />
+      </div>
+      <div className="w-[292px] h-[47px] items-center gap-[8.12px] px-[15.44px] py-[8.12px] top-[703px] left-[calc(50.00%_-_149px)] bg-[#74c47c] rounded-[15px] flex justify-center absolute">
+        <div className="relative w-fit [font-family:'Gmarket_Sans-Medium',Helvetica] font-medium text-white text-[15px] whitespace-nowrap tracking-[0] leading-[normal]">
+          이어서 대화하기
+        </div>
+      </div>
+      <Menu className="!absolute !top-[65px] !left-[345px] !w-[39px] !h-[39px] !aspect-[1]" />
+      <HomeIndicator
+        className="!justify-center !absolute !flex !bottom-0 !left-0 !items-end !w-full !top-[unset]"
+        device="i-phone"
+        homeIndicatorClassName="!mb-2 !bottom-[unset] ![position:unset] !left-[unset]"
+        orientation="portrait"
+      />
+      <img
+        className="absolute top-[285px] left-[60px] w-[283px] h-[354px] aspect-[0.8] object-cover"
+        alt="Image"
+        src={image961}
+      />
+      <img
+        className="absolute top-[368px] left-[298px] w-[104px] h-[271px]"
+        alt="Mask group"
+        src={maskGroup}
+      />
+      <img
+        className="absolute top-[362px] left-0 w-[121px] h-72 aspect-[0.8] object-cover"
+        alt="Image"
+        src={image100}
+      />
+    </div>
+  );
+};
