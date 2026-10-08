@@ -30,7 +30,7 @@ persona_system_prompt = load_persona("lion")
 model = ChatOpenAI(
     model="HCX-007",
     base_url="https://clovastudio.stream.ntruss.com/v1/openai",
-    api_key="nv-f5f203197385450c802d459aed95f5f8koHd",
+    api_key="",
 )
 
 prompt = ChatPromptTemplate.from_messages([
